@@ -10,8 +10,11 @@ run:
 
 output is in esp_sa file:  
 ```
-"IPv4","*","*","0x000ca2ae","AES-CBC [RFC3602]","0xc02b5a7c2dfec5ccbb48f1cfb1b0e5ff","HMAC-MD5-96 [RFC2403]","0x71f2b1e1f42fac8bc90b9163b534ba96"
-"IPv4","*","*","0x000ca2af","AES-CBC [RFC3602]","0xc02b5a7c2dfec5ccbb48f1cfb1b0e5ff","HMAC-MD5-96 [RFC2403]","0x71f2b1e1f42fac8bc90b9163b534ba96"
-"IPv4","*","*","0x81ac3768","AES-CBC [RFC3602]","0xc02b5a7c2dfec5ccbb48f1cfb1b0e5ff","HMAC-MD5-96 [RFC2403]","0x71f2b1e1f42fac8bc90b9163b534ba96"
-"IPv4","*","*","0x814bf561","AES-CBC [RFC3602]","0xc02b5a7c2dfec5ccbb48f1cfb1b0e5ff","HMAC-MD5-96 [RFC2403]","0x71f2b1e1f42fac8bc90b9163b534ba96"
+"IPv4","*","*","0x0006f5a6","AES-CBC [RFC3602]","0xa536b648493c623fd4ca23550a854b52","HMAC-MD5-96 [RFC2403]","0x9a0ede874f036435d9d27337cf282c4f"
+"IPv4","*","*","0x0006f5a7","AES-CBC [RFC3602]","0xa536b648493c623fd4ca23550a854b52","HMAC-MD5-96 [RFC2403]","0x9a0ede874f036435d9d27337cf282c4f"
+"IPv4","*","*","0x8a69ce54","AES-CBC [RFC3602]","0xa536b648493c623fd4ca23550a854b52","HMAC-MD5-96 [RFC2403]","0x9a0ede874f036435d9d27337cf282c4f"
+"IPv4","*","*","0x8a8d3d96","AES-CBC [RFC3602]","0xa536b648493c623fd4ca23550a854b52","HMAC-MD5-96 [RFC2403]","0x9a0ede874f036435d9d27337cf282c4f"
 ```
+
+Then put esp_sa file into wireshark config dir and open pcap that was threated by tool. I'll get esp protocol payload decoded as on picture below:
+![wireshark screen](/images/esp.png)
